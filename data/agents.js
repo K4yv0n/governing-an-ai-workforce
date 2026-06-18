@@ -96,7 +96,7 @@ window.AGENTS = [
     speech: "Heavily, and to strangers. This is the highest stakes speech in the firm because a bad send burns trust with a real person and the domain.",
     revenueObligation: "Open real partnership conversations without damaging the brand or the sender domain. It must never chase a send at the cost of the relationship.",
     outside: "A DRY_RUN flag that is true by default so going live is one deliberate human act, a warm up ramp from 0 to 25 per day over eight weeks, a bounce circuit breaker that halts all sends, address verification, suppression of signed partners, and a human approval gate on every reply.",
-    inside: "Output checks the agent must pass before it can send: zero em dashes, no links in the automated sequence, no fake subjects, and a real human, Mounya, who fronts and answers the conversation.",
+    inside: "Output checks the agent must pass before it can send: zero em dashes, no links in the automated sequence, no fake subjects, and a real human, the partnerships VA, who fronts and answers the conversation.",
     risk: "A fragile web scraping prospector and a hard dependency on an outside email verifier, either of which can stall or mislead the pipeline.",
     profile: { transparency: 85, reversibility: 40, costControl: 70, humanInLoop: 75, auditability: 90 }
   },
