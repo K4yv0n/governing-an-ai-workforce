@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Governing an AI Workforce | BANA6020 Unit 7 Project | Kayvon Jafarzadeh</title>
+<meta name="description" content="An interactive governance artifact for BANA6020 Managerial Reporting. It applies the Holding Bots Accountable deliberation guide and core managerial accounting concepts to a real AI-native media company and its workforce of eight production agents.">
+<meta property="og:title" content="Governing an AI Workforce">
+<meta property="og:description" content="Cornell Johnson BANA6020 individual project by Kayvon Jafarzadeh. A visibly governed artifact for holding a real AI agent workforce accountable.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="mark" aria-hidden="true"></span>
+      <span class="mark-text"><small>BANA6020 / UNIT 7</small><span>Governing an AI Workforce</span></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation">&#9776;</button>
+    <nav class="nav-links" id="nav-links" aria-label="Sections">
+      <a href="#orientation">Orientation</a>
+      <a href="#setting">Setting</a>
+      <a href="#accountability">Accountability</a>
+      <a href="#register">Register</a>
+      <a href="#scorecard">Scorecard</a>
+      <a href="#gaming">Gaming</a>
+      <a href="#social">Social</a>
+      <a href="#supply-chain">Supply Chain</a>
+      <a href="#reflections">Reflections</a>
+      <a href="#boundaries">Boundaries</a>
+    </nav>
+  </div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+</header>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-mesh" aria-hidden="true"></div>
+  <div class="wrap">
+    <span class="course-tag"><span class="dot" aria-hidden="true"></span>Cornell Johnson &middot; BANA6020 Managerial Reporting &middot; Unit 7 Individual Project</span>
+    <h1>Governing an <span class="accent">AI Workforce</span></h1>
+    <p class="sub">A visibly governed artifact that holds a real company's eight production AI agents accountable, using the Holding Bots Accountable deliberation guide and the core ideas of managerial reporting.</p>
+    <p class="byline">By <b>Kayvon Jafarzadeh</b>. The enterprise under analysis is The Tech Plate, an AI-native tech media company the author operates.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#orientation">Read the orientation card &darr;</a>
+      <a class="btn btn-ghost" href="#accountability">Go to the deliberation</a>
+    </div>
+
+    <div class="stats" aria-label="Key figures">
+      <div class="stat"><div class="num" data-count="8">0</div><div class="lbl">production AI agents governed</div></div>
+      <div class="stat"><div class="num" data-count="550" data-suffix="K+">0</div><div class="lbl">audience under obligation</div></div>
+      <div class="stat"><div class="num" data-prefix="$" data-count="8">0</div><div class="lbl">daily compute cap on the script agent</div></div>
+      <div class="stat"><div class="num" data-count="1" data-suffix=" min">0</div><div class="lbl">cron interval on the detection agent</div></div>
+    </div>
+
+    <div class="status-strip" role="img" aria-label="Illustrative status of real controls in the agent fleet">
+      <span class="live"><span class="pip" aria-hidden="true"></span>case evidence</span>
+      <span class="kv">DRY_RUN: <span class="coral">true</span></span>
+      <span class="kv">DAILY_SPEND_CAP: <b>$8</b></span>
+      <span class="kv">CLIP_BUDGET: <b>$250/mo</b></span>
+      <span class="kv">BOUNCE_BREAKER: <b>armed</b></span>
+      <span class="kv">EM_DASH_CHECK: <b>enforced</b></span>
+    </div>
+    <p class="status-note">These are real configuration values pulled from the agents' operating rules, shown as evidence. They are not a live feed.</p>
+  </div>
+</section>
+
+<!-- ============ ORIENTATION CARD ============ -->
+<section class="band band-soft" id="orientation">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The governing document</span>
+      <h2>Orientation Card</h2>
+      <p class="lede">Every claim downstream is governed by this card. It states what the artifact is, who may rely on it, and where that reliance stops.</p>
+    </div>
+
+    <div class="charter reveal">
+      <div class="seal" aria-hidden="true">GOVERNED<br>ARTIFACT</div>
+      <h3>Governing an AI Workforce</h3>
+      <span class="tag" style="color:var(--muted);font-family:var(--font-mono);font-size:12px;">Orientation card, all seven fields</span>
+      <dl class="fields">
+        <div class="field">
+          <dt>Artifact</dt>
+          <dd>An interactive website that documents and governs the real workforce of The Tech Plate, an AI-native media company. It is a working governance manual for a hybrid firm of eight autonomous AI agents, two outsourced human roles, and one owner-operator. It carries an orientation card, a full bot-accountability deliberation, a balanced scorecard, a responsibility-center map, a compensation-as-compute design, a gaming-and-tilting analysis, a social-accounting section, and five personal reflections.</dd>
+        </div>
+        <div class="field">
+          <dt>Problem / Enterprise</dt>
+          <dd>The Tech Plate makes tech and AI media for founders, marketers, and operators across an audience of roughly 550,000 plus. The production line is mostly run by bots that act without a human in every loop. A one-minute cron decides what is an outlier. A daily worker writes full scripts and lands them in a database. A cold-outreach agent emails strangers under the brand. When eight agents run continuously, the failures that matter are not bugs, they are governance failures: a bot drifts off voice, a bot fabricates a fact, a bot pitches a partner we already signed, a bot burns budget silently.</dd>
+        </div>
+        <div class="field span2">
+          <dt>Course Engagement</dt>
+          <dd>The deliberation backbone is the Unit 6 Holding Bots Accountable guide (Module 6.2), a guide not used for any team project, since the team projects were Units 1 and 5. The artifact also engages Module 1.1 (conflict, the Five Functions of Governance, Reports, Incentives, and Controls, the Fraud Triangle, the Five Ways to Misreport), 1.2 (role design, responsibility centers, internal supply chains, transfer pricing and service-level agreements), 1.3 (the MAP, proportional punishment, the entity principle, subsidiarity), 1.4 (motivated reasoning, Chesterton's Fence, no system is perfect), 5.1 (a full balanced scorecard with a strategy map and Libby boxes), 5.2 (compensation redesigned as compute-budget incentive design), 5.3 (gaming and tilting with convexity and concavity), 5.4 (social accounting and obligations to the audience), 6.1 (gamification), 6.3 (redistribute the workforce), and 6.4 (redistribute the workplace).</dd>
+        </div>
+        <div class="field span2">
+          <dt>Reliability Theory</dt>
+          <dd>
+            <b>Who the downstream user is.</b> Three users in priority order. First, the owner-operator, the principal who carries final accountability. Second, a future operator or hire who must run the firm without the owner re-explaining it. Third, other AI-native solo founders who will read this as a template for governing their own agent workforce.
+            <ul>
+              <li><b>What they may rely on it for:</b> the authoritative description of what each agent does, what control each has, where the human gates sit, what the spend caps are, how to respond when an agent misbehaves, and the agreed definition of what good performance means for the firm.</li>
+              <li><b>What they may not rely on it for:</b> a guarantee that the agents are bug free, that caps can never be bypassed, or that an off-voice script can never reach the audience. It is not legal advice on unfair-or-deceptive-practice compliance. It is not a live dashboard. The numbers are targets and design intent, not telemetry.</li>
+              <li><b>Consequences that may follow:</b> the owner may add the one human review gate that is missing between the script agent and the published database. A future operator may halt all cold sends using the documented circuit breaker rather than improvising. When an agent produces a bad account, the entity principle assigns the consequence to the principal, not the bot, and the redesign path is to tighten the control rather than blame the tool.</li>
+            </ul>
+          </dd>
+        </div>
+        <div class="field">
+          <dt>Governance of Reasoning</dt>
+          <dd>Only claims grounded in the actual agent code and real business facts count. Every governance claim must point to a real control: a hard cap, an approval gate, an output check, a circuit breaker, an idempotency key, or a retry policy. If a control does not exist yet, it is listed as a gap, not asserted as present. The artifact refuses to claim autonomy where a human still approves, refuses to present targets as live results, and keeps a standing list of every known fragility visible.</dd>
+        </div>
+        <div class="field">
+          <dt>Methods / Materials</dt>
+          <dd>Built from primary sources: the eight live agent repositories and their operating-rule files, the Notion databases that serve as each agent's source of truth, and the BANA6020 module materials, especially the Holding Bots Accountable deliberation guide. The brand voice standard is direct, result-first, and uses no em dashes, which is itself one of the agents' enforced output checks.</dd>
+        </div>
+        <div class="field span2">
+          <dt>Boundaries</dt>
+          <dd>This artifact does not publish secrets, API keys, contact addresses, or full deal economics. It does not govern anything outside The Tech Plate. It does not provide legal, tax, or compliance advice. It does not serve live telemetry. It does not modify or rebuild the agents' code; it governs them. It does not claim the audience's consent or speak for them; it states the owner's obligations to them. It stops at the boundary of the firm: partners, platforms, and regulators are named as players, but governing them is out of scope.</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SETTING ============ -->
+<section class="band" id="setting">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The setting, fully described</span>
+      <h2>The Enterprise: The Tech Plate</h2>
+      <p class="lede">A hybrid firm. One owner-operator, a fleet of AI agents, and outsourced humans. This is the workforce the rest of the artifact governs.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal">
+        <h4>The owner-operator</h4>
+        <p>One person sets strategy, approves what matters, and carries the final account for everything the firm publishes. In governance terms, the principal.</p>
+      </div>
+      <div class="card reveal">
+        <h4>The AI agents</h4>
+        <p>Eight production agents do the work: transcription and scripting, outlier detection, footage labeling, cold outreach, image and music sourcing, and video editing. Each holds real authority and real obligations.</p>
+      </div>
+      <div class="card reveal">
+        <h4>The outsourced humans</h4>
+        <p>A partnerships VA, Mounya, fronts brand outreach and answers replies. Video editors pull clips and assemble cuts. They are contracted responsibility centers with their own service levels.</p>
+      </div>
+    </div>
+    <p class="reveal" style="margin-top:22px;color:var(--text2);max-width:820px;">
+      The firm spans three clouds and a local machine. That distribution is not a detail, it is the governance problem: when work runs on a one-minute cron in one place, a daily cron in another, and a long-running virtual machine in a third, no single screen shows you whether the firm is behaving. This artifact is the screen.
+    </p>
+  </div>
+</section>
+
+<!-- ============ ACCOUNTABILITY: THE 6.2 DELIBERATION ============ -->
+<section class="band band-soft" id="accountability">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Centerpiece &middot; Module 6.2 deliberation</span>
+      <h2>Holding the Bots Accountable</h2>
+      <p class="lede">This section follows the Holding Bots Accountable deliberation guide step by step. Each guide instruction is quoted, then answered against the real agents.</p>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="step reveal" style="margin-bottom:36px;">
+      <div class="step-head"><span class="step-num">1</span><h3>Identify the bot's role</h3></div>
+      <div class="guide-quote">
+        Bots operate by using past data to predict the consequences of possible responses to current actions given current data. When assigning a role, be sure it is feasible to have large and reliable sets of past and current data. Focus on the functions you want the bot to accomplish rather than the particular features you want it to have.
+        <span class="src">Quoted from the deliberation guide</span>
+      </div>
+      <p>Each agent is defined by a function, not a feature. The script agent's function is not to write text, it is to produce a publishable, on-voice script. The clip agent's function is not to run a vision model, it is to make footage findable on the first query. Stating the function this way is what makes the missing control obvious later: if the function is a publishable script, then a step that checks whether a draft is publishable is part of the role, and right now that step is absent.</p>
+      <p>The data feasibility test also screens roles in advance. Outlier detection is a safe role because large, reliable performance data exists for public channels. By contrast, asking a bot to judge whether a take is ethically safe to publish fails the test, because there is no large, reliable labeled dataset for that judgment, which is exactly why that decision stays with a human.</p>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="step reveal" style="margin-bottom:36px;">
+      <div class="step-head"><span class="step-num">2</span><h3>Identify the role's obligations</h3></div>
+      <div class="guide-quote">
+        Every role comes with assets. For bots these assets always include authority to access data and often include authority to make decisions, offer recommendations, or communicate, speaking through text, voice, images, or other mediums. Assets always come with obligations. Many are enforced through regulation, including the obligation to avoid unfair or deceptive business practices. It is especially important to identify a bot's revenue obligations, the central and ongoing obligations to serve the beneficiary in the ways expected by those who entrusted it with assets.
+        <span class="src">Quoted from the deliberation guide</span>
+      </div>
+      <p>Every agent's authority creates a matching obligation. The cold-outreach agent holds the authority to speak as the brand to strangers, so it carries the regulatory obligation to avoid unfair or deceptive practices: it never implies a human wrote what a bot wrote without a real human, Mounya, standing behind the conversation, and it never sends to an unverified address. The script agent holds the authority to write public-facing speech, so it carries the obligation to stay grounded and on voice.</p>
+      <p><b>Revenue obligations</b> are named for each agent because they are the obligations a downstream user most expects to be met. The script agent's revenue obligation is to produce scripts good enough to publish, not merely to produce scripts. The clip agent's is to make a shot findable on the first query. Stating the revenue obligation is what exposes a misaligned incentive: an agent paid in compute for producing volume, with no check on quality, is being rewarded for the wrong thing.</p>
+
+      <h4 style="margin:22px 0 6px;font-family:var(--font-display);font-size:16px;color:var(--text);">The agents that speak carry the Obligations of Speech</h4>
+      <p>Five of the eight agents produce speech: scripts, titles, emails, and labels. The guide's Obligations of Speech table is the standard each is held to.</p>
+      <table class="speech-table">
+        <thead><tr><th>Obligation class</th><th>Standard (from the guide)</th><th>How it binds the script and outreach agents</th></tr></thead>
+        <tbody>
+          <tr><td>Contribution</td><td>Be relevant. Be faithful. Be intelligible.</td><td>Scripts must answer the viewer's real question, stay faithful to the facts, and read cleanly. Faithfulness is the obligation the missing review gate puts at risk.</td></tr>
+          <tr><td>Procedural impact</td><td>Be efficient. Be engaging. Be diplomatic.</td><td>Titles stay inside length bounds, hooks earn attention without baiting, and cold emails never use fake subjects or spam phrasing.</td></tr>
+          <tr><td>Substantive impact</td><td>Don't harm parties. Don't harm the venue.</td><td>Do not mislead the audience, and do not abuse the platform or the inbox. Suppressing already-signed partners is a do-not-harm-the-venue control.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="step reveal" style="margin-bottom:36px;">
+      <div class="step-head"><span class="step-num">3</span><h3>Propose outside and inside accountability techniques</h3></div>
+      <div class="guide-quote">
+        In most ways bots are held accountable from the outside, like people: assign roles with only the assets they can be trusted to use wisely, then use reports to track performance and controls to make good performance easier and poor performance harder. Bots can also be held accountable from the inside in novel ways, redesigning the bot to fit the role rather than only redesigning roles to fit the bot.
+        <span class="src">Quoted from the deliberation guide</span>
+      </div>
+      <div class="grid grid-2">
+        <div class="card reveal">
+          <h4>Outside controls (reports and controls around the bot)</h4>
+          <ul style="font-size:14px;">
+            <li>Hard spend caps the bot cannot reason past: 8 dollars per day on the script agent, 250 per month on the clip agent.</li>
+            <li>Circuit breakers: the outreach agent halts all sends on a bounce spike, and a warm-up health gate pauses sends if deliverability drops.</li>
+            <li>A DRY_RUN switch so going live is one deliberate human act, not a bot's decision.</li>
+            <li>Human approval gates: reply drafts wait for Mounya, edited variants wait for a human vote, transcripts wait for review.</li>
+            <li>Ledgers and audit trails on every send and every paid run.</li>
+          </ul>
+        </div>
+        <div class="card reveal">
+          <h4>Inside controls (re-engineering the bot itself)</h4>
+          <ul style="font-size:14px;">
+            <li>Output checks the bot must pass before it can write: zero em dashes, no invented links, title length bounds, banned-phrase rejects.</li>
+            <li>A self-heal mandate: the detection agent has no Failed status; it retries, then routes to Manual Review, failing toward a human rather than into silence.</li>
+            <li>A structural ban on guessing: the clip agent takes camera and date only from file metadata, never from a model guess.</li>
+            <li>Earned autonomy: the script agent is calibrated locally until two consecutive batches pass before it is allowed to run live.</li>
+          </ul>
+        </div>
+      </div>
+      <p style="margin-top:18px;">The guide's most direct response to poor performance is to remove an authority the bot cannot be trusted to use wisely, then return it after retraining. The clearest application: the script agent's authority to write directly into the published database should be removed and returned only behind a review gate. Use the interactive auditor below to inspect where each agent's accountability is strong and where it is thin.</p>
+
+      <!-- Auditor -->
+      <h4 style="margin:26px 0 14px;font-family:var(--font-display);font-size:18px;color:var(--text);">Bot Accountability Auditor</h4>
+      <div class="auditor reveal">
+        <div class="auditor-list" id="auditor-list" role="tablist" aria-label="Select an agent to audit"></div>
+        <div class="auditor-panel" id="auditor-panel" role="tabpanel" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="step reveal">
+      <div class="step-head"><span class="step-num">4</span><h3>Consider holding others accountable for how they treat the bot</h3></div>
+      <div class="guide-quote">
+        Bots are not members of society and don't actually suffer when governance treats them poorly. Yet it is still worth considering how you can live up to the obligations of governance for structural, economic, psychological, and social reasons.
+        <span class="src">Quoted from the deliberation guide</span>
+      </div>
+      <p>The guide's final move is reciprocal: it asks what the owner owes the agents. The owner owes them clear mandates, current inputs, and a fair operating environment, and the four reasons in the guide all apply to this firm.</p>
+      <div class="grid grid-2">
+        <div class="card reveal"><h4>Structural</h4><p>The same controls that protect the agents protect the humans. A review gate, a spend cap, and a clear audit trail are good for the bot and good for Mounya and the editors. Building the system to treat agents fairly raises the floor for everyone in it.</p></div>
+        <div class="card reveal"><h4>Economic</h4><p>If agents are tuned to squeeze every last view at the cost of trust, the firm competes itself into low-quality content. Treating the agents' work as accounts to stand behind, not output to maximize, is what keeps the business defensible.</p></div>
+        <div class="card reveal"><h4>Psychological</h4><p>How the owner treats the agents trains how the owner works. A habit of blaming the tool for a missing gate is a habit of avoiding the real fix. Owning the gap, not the bot, is the discipline the entity principle from Module 1.3 demands.</p></div>
+        <div class="card reveal"><h4>Social</h4><p>The audience identifies with what the agents say and do under the brand. Treating the agents' speech carelessly treats the audience carelessly. Giving the agents fresh inputs, like current voice docs, is in the end a courtesy to the 550,000 people who hear the result.</p></div>
+      </div>
+      <p style="margin-top:18px;">What the owner owes each agent in practice: keep the voice docs current so the script and transcribe agents do not drift, keep the Drive share intact so the clip agent does not fail silently, retune the static outlier threshold and retire the dead detection lane, and above all add the one missing review gate so the script agent is never blamed for shipping something it was never given a reviewer for.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOT REGISTER ============ -->
+<section class="band" id="register">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">The workforce on one screen</span>
+      <h2>Bot Register</h2>
+      <p class="lede">All eight agents with their job, controls, and key risk. Filter by where they run or by risk level, search, and sort.</p>
+    </div>
+    <div class="controls reveal">
+      <div class="chips" id="filter-runtime" role="group" aria-label="Filter by runtime">
+        <button class="chip" aria-pressed="true" data-runtime="all">All</button>
+        <button class="chip" aria-pressed="false" data-runtime="cloudflare">Cloudflare</button>
+        <button class="chip" aria-pressed="false" data-runtime="gce">Compute VM</button>
+        <button class="chip" aria-pressed="false" data-runtime="notion">Notion</button>
+        <button class="chip" aria-pressed="false" data-runtime="github">GitHub</button>
+        <button class="chip" aria-pressed="false" data-runtime="local">Local</button>
+      </div>
+      <div class="chips" id="filter-risk" role="group" aria-label="Filter by risk">
+        <button class="chip" aria-pressed="false" data-risk="high">High risk</button>
+        <button class="chip" aria-pressed="false" data-risk="med">Medium</button>
+        <button class="chip" aria-pressed="false" data-risk="low">Low</button>
+      </div>
+      <label class="search">
+        <span class="sr-only">Search agents</span>
+        <input type="search" id="register-search" placeholder="Search agents...">
+      </label>
+      <select class="select-sort" id="register-sort" aria-label="Sort agents">
+        <option value="risk">Sort: risk first</option>
+        <option value="name">Sort: name</option>
+        <option value="runtime">Sort: runtime</option>
+      </select>
+    </div>
+    <div id="register-grid" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============ BALANCED SCORECARD ============ -->
+<section class="band band-soft" id="scorecard">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Module 5.1</span>
+      <h2>Balanced Scorecard</h2>
+      <p class="lede">What good performance means for the firm, across four perspectives, with a strategy map showing how the lower perspectives drive the higher ones.</p>
+    </div>
+    <div class="chart-row">
+      <div class="chart-box reveal">
+        <h3>Four perspectives: design intent vs current</h3>
+        <div class="canvas-wrap">
+          <canvas id="scorecardChart" aria-label="Radar chart comparing target and current strength across the four scorecard perspectives"></canvas>
+        </div>
+        <p class="sr-only">Target strength is high across Financial, Customer, Internal Process, and Learning and Growth. Current strength is strong on Learning and Growth and Financial discipline but lower on Internal Process, reflecting the missing review gate, and on Customer trust measurement.</p>
+        <p style="font-size:12.5px;color:var(--muted);margin-top:10px;">Scores are design-intent estimates used to show where the firm is strong and where it is thin, not live measurements.</p>
+      </div>
+      <div class="reveal">
+        <div class="stratmap">
+          <div class="lane"><div class="lane-label">Financial</div><div class="obj">Durable brand-deal revenue, run capital-efficiently. Measures: revenue per quarter, compute cost per published asset.</div></div>
+          <div class="lane-arrow" aria-hidden="true">&uarr;</div>
+          <div class="lane"><div class="lane-label">Customer (audience and partners)</div><div class="obj">Earn and keep trust, satisfy partners. Measures: unfollow rate after sponsored posts, saves plus shares per thousand views, repeat-deal rate.</div></div>
+          <div class="lane-arrow" aria-hidden="true">&uarr;</div>
+          <div class="lane"><div class="lane-label">Internal Process</div><div class="obj">Keep the script supply chain clean, retrieve footage fast. Measures: percent of scripts passing review on first try, retrieval precision at first query.</div></div>
+          <div class="lane-arrow" aria-hidden="true">&uarr;</div>
+          <div class="lane"><div class="lane-label">Learning and Growth</div><div class="obj">Reliable agents, current voice. Measures: days without a circuit-breaker trip, voice-doc freshness.</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="card reveal" style="margin-top:20px;">
+      <h4>Libby box note: the trust proxy</h4>
+      <p style="font-size:14px;">The construct on the Customer perspective is audience trust. It is operationalized by unfollow rate after sponsored posts and saves plus shares per thousand views. Follower count is deliberately not the trust measure, because it is a biased and noisy proxy: it rises with giveaways and follow-bait that bring low-intent followers, and it omits the variable that actually matters, whether the audience still acts on a recommendation. Naming the bias, the noise, and the omitted variable is the Libby-box discipline from Module 5.1.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GAMING AND TILTING ============ -->
+<section class="band" id="gaming">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Module 5.3</span>
+      <h2>Gaming and Tilting in the Creator Economy</h2>
+      <p class="lede">Platforms pay on measured performance. The business runs on real performance. When the two come apart, an agent optimizing the measure will spend the thing that actually pays.</p>
+    </div>
+    <div class="chart-row">
+      <div class="chart-box reveal">
+        <h3>Why the incentive shape invites gaming</h3>
+        <div class="canvas-wrap">
+          <canvas id="gamingChart" aria-label="Line chart contrasting a convex platform payoff, a concave trust payoff, and a linear fair reference"></canvas>
+        </div>
+        <div class="chart-toggle" id="gaming-toggle" role="group" aria-label="Toggle curves">
+          <button class="chip" aria-pressed="true" data-curve="convex">Convex platform payoff</button>
+          <button class="chip" aria-pressed="true" data-curve="concave">Concave trust payoff</button>
+          <button class="chip" aria-pressed="true" data-curve="linear">Linear reference</button>
+        </div>
+        <p class="sr-only">The convex platform payoff rewards rare viral hits exponentially, encouraging high-variance swings such as outrage and clickbait. The concave trust payoff rises steadily then flattens, so honest educational value is under-rewarded by the algorithm even though it is what brands pay for.</p>
+      </div>
+      <div class="reveal">
+        <p><b>The vanity metrics that can be gamed.</b> Follower count, view count, watch time, the internal outlier multiple, posting frequency, and engagement rate. Each can be pumped without making the content more useful.</p>
+        <p><b>Convex versus concave.</b> The platform payoff is convex at the top: one viral hit pays exponentially more than ten solid posts, so it rewards gambling on outrage and clickbait. Trust accrues concavely: each honest video adds a little, with diminishing visible reward and no jackpot. The trap is that the agents live on the convex side. The detection agent hunts spikes, the script agent turns spikes into scripts, and nothing in that chain is paid for the concave thing that pays the business.</p>
+        <p><b>Mitigations the firm can adopt.</b></p>
+        <ul style="font-size:14px;">
+          <li>Add the missing human review gate so a hot but misleading angle cannot auto-publish. Highest leverage.</li>
+          <li>Re-weight the outlier signal with a tutorial-value filter so the supply chain stops paying for outrage.</li>
+          <li>Put a trust metric on the scorecard next to reach, so the concave asset is visible.</li>
+          <li>Enforce truth-in-title as an output check, exactly like the no-em-dash rule.</li>
+          <li>Gate the next batch's compute on the prior batch's first-pass review rate, so the agent cannot game its way to more runs by producing thin scripts.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOCIAL ACCOUNTING ============ -->
+<section class="band band-soft" id="social">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Module 5.4</span>
+      <h2>Social Accounting: Obligations to the Audience</h2>
+      <p class="lede">The audience of 550,000 plus is a beneficiary with standing. The firm keeps a moral account toward them, not just a financial one.</p>
+    </div>
+    <div class="grid grid-3">
+      <div class="card reveal"><h4>Players and concerns</h4><p>The audience wants truthful, useful tech information and clear disclosure. Brand partners want honest reach. Platforms want non-abusive behavior. Each is a player whose concerns the firm is accountable to.</p></div>
+      <div class="card reveal"><h4>The obligations</h4><p>Tell the truth, with no fabricated benchmarks. Disclose materially: label what is AI-generated and what is a paid partnership. Do not exploit attention with claims the content cannot honor.</p></div>
+      <div class="card reveal"><h4>Moral licensing</h4><p>Disclosing AI use on some posts does not license deception on others, and content being free does not license wasting the audience's time. Each post is its own account.</p></div>
+    </div>
+    <div class="card reveal" style="margin-top:16px;">
+      <h4>Moral insolvency, stated plainly</h4>
+      <p style="font-size:14px;">When a hot angle would perform but mislead, the obligation to the audience outranks the metric. The firm would rather be metric-insolvent for a week than account-insolvent with the people who trust it. That ranking is the reason the proposed review gate is a governance fix, not just a quality one.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SUPPLY CHAIN ============ -->
+<section class="band" id="supply-chain">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Module 1.2 and 6.3</span>
+      <h2>Responsibility Centers and the Internal Supply Chain</h2>
+      <p class="lede">The script pipeline is a literal internal supply chain that runs agent to agent, with a transfer price denominated in compute and a service level set by output checks. The red node is the missing control.</p>
+    </div>
+    <div class="supply reveal">
+      <svg viewBox="0 0 940 250" role="img" aria-label="Diagram of the script supply chain from source accounts through Worker 1, the outliers database, Worker 2, a missing review gate, the scripts database, editors, and published output">
+        <defs>
+          <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0 0 L10 5 L0 10 z" fill="#888"></path>
+          </marker>
+          <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+            <path d="M0 0 L10 5 L0 10 z" fill="#ff6b6b"></path>
+          </marker>
+        </defs>
+
+        <!-- connectors row A -->
+        <line x1="150" y1="54" x2="172" y2="54" stroke="#888" stroke-width="2" marker-end="url(#arrow)"></line>
+        <line class="flow-line" x1="312" y1="54" x2="334" y2="54" stroke="#ffd400" stroke-width="2.5" marker-end="url(#arrow)"></line>
+        <line x1="474" y1="54" x2="496" y2="54" stroke="#888" stroke-width="2" marker-end="url(#arrow)"></line>
+        <line x1="636" y1="54" x2="658" y2="54" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrowRed)"></line>
+
+        <!-- row A nodes -->
+        <g>
+          <rect x="20" y="30" width="130" height="48" rx="9" fill="#141414" stroke="#333"></rect>
+          <text x="85" y="51" text-anchor="middle" fill="#e0e0e0" font-size="12" font-family="monospace">Source Accounts</text>
+          <text x="85" y="66" text-anchor="middle" fill="#888" font-size="9.5" font-family="monospace">input list</text>
+        </g>
+        <g>
+          <rect x="182" y="30" width="130" height="48" rx="9" fill="#141414" stroke="#ffd400"></rect>
+          <text x="247" y="51" text-anchor="middle" fill="#f5f5f5" font-size="12" font-family="monospace">Worker 1</text>
+          <text x="247" y="66" text-anchor="middle" fill="#888" font-size="9.5" font-family="monospace">cost / quality center</text>
+        </g>
+        <g>
+          <rect x="344" y="30" width="130" height="48" rx="9" fill="#141414" stroke="#4ecdc4"></rect>
+          <text x="409" y="51" text-anchor="middle" fill="#e0e0e0" font-size="12" font-family="monospace">Source Outliers</text>
+          <text x="409" y="66" text-anchor="middle" fill="#888" font-size="9.5" font-family="monospace">data store</text>
+        </g>
+        <g>
+          <rect x="506" y="30" width="130" height="48" rx="9" fill="#141414" stroke="#ffd400"></rect>
+          <text x="571" y="51" text-anchor="middle" fill="#f5f5f5" font-size="12" font-family="monospace">Worker 2</text>
+          <text x="571" y="66" text-anchor="middle" fill="#888" font-size="9.5" font-family="monospace">process center</text>
+        </g>
+        <g>
+          <rect x="660" y="28" width="140" height="52" rx="9" fill="rgba(255,107,107,0.08)" stroke="#ff6b6b" stroke-dasharray="5 4"></rect>
+          <text x="730" y="49" text-anchor="middle" fill="#ff6b6b" font-size="11.5" font-family="monospace">MISSING GATE</text>
+          <text x="730" y="64" text-anchor="middle" fill="#ff6b6b" font-size="9" font-family="monospace">no human review</text>
+        </g>
+
+        <!-- transfer price / SLA labels -->
+        <text x="323" y="22" text-anchor="middle" fill="#ffd400" font-size="9" font-family="monospace">transfer price: $8/day compute</text>
+        <text x="571" y="98" text-anchor="middle" fill="#888" font-size="9" font-family="monospace">SLA: output checks, on-voice, link-free</text>
+
+        <!-- down connector from gate to scripts db -->
+        <line x1="730" y1="80" x2="730" y2="120" stroke="#ff6b6b" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#arrowRed)"></line>
+
+        <!-- row B -->
+        <g>
+          <rect x="660" y="124" width="140" height="48" rx="9" fill="#141414" stroke="#4ecdc4"></rect>
+          <text x="730" y="145" text-anchor="middle" fill="#e0e0e0" font-size="12" font-family="monospace">Scripts DB</text>
+          <text x="730" y="160" text-anchor="middle" fill="#888" font-size="9.5" font-family="monospace">data store</text>
+        </g>
+        <line x1="660" y1="148" x2="474" y2="148" stroke="#888" stroke-width="2" marker-end="url(#arrow)"></line>
+        <g>
+          <rect x="344" y="124" width="130" height="48" rx="9" fill="#141414" stroke="#333"></rect>
+          <text x="409" y="145" text-anchor="middle" fill="#e0e0e0" font-size="12" font-family="monospace">Editors</text>
+          <text x="409" y="160" text-anchor="middle" fill="#888" font-size="9.5" font-family="monospace">human, downstream customer</text>
+        </g>
+        <line x1="344" y1="148" x2="312" y2="148" stroke="#888" stroke-width="2" marker-end="url(#arrow)"></line>
+        <g>
+          <rect x="182" y="124" width="130" height="48" rx="9" fill="rgba(255,122,107,0.10)" stroke="#ff7a6b"></rect>
+          <text x="247" y="145" text-anchor="middle" fill="#ff7a6b" font-size="12" font-family="monospace">Published</text>
+          <text x="247" y="160" text-anchor="middle" fill="#888" font-size="9.5" font-family="monospace">public account</text>
+        </g>
+      </svg>
+      <div class="legend">
+        <span><i style="background:#ffd400;"></i>agent (responsibility center)</span>
+        <span><i style="background:#4ecdc4;"></i>data store</span>
+        <span><i style="background:#ff6b6b;"></i>missing control</span>
+        <span><i style="background:#ff7a6b;"></i>published account</span>
+        <span><i style="background:#333;"></i>input / human</span>
+      </div>
+    </div>
+    <p class="reveal" style="margin-top:18px;color:var(--text2);max-width:840px;">
+      Worker 1 is a cost-and-quality center that supplies outliers. Worker 2 is the process center that converts them into scripts. The transfer price between them is the eight-dollar daily compute budget, and the service level is the output-check contract. The honest defect, drawn in red, is that nothing reviews the script before it lands in the published database. The detection score also measures virality, not tutorial value, so the chain can deliver a perfectly hot input that is a poor input for a good script.
+    </p>
+  </div>
+</section>
+
+<!-- ============ REFLECTIONS ============ -->
+<section class="band band-soft" id="reflections">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Unit 7 reflection</span>
+      <h2>Reflections on the Course</h2>
+      <p class="lede">The personal half of the assignment, answered from the experience of building and running these eight agents.</p>
+    </div>
+
+    <div class="reflection reveal">
+      <div class="q">1. The most helpful material, and why.</div>
+      <p>Reports, Incentives, and Controls from Module 1.1 helped me most, because it gave me language for something I was already doing badly by instinct. I had eight agents shipping work and I was reasoning about them one bug at a time. Once I saw that every agent is a report plus an incentive plus a control, I could see that my real problem was incentive design, not code. My script worker was incentivized to produce scripts and had no control checking whether the scripts were good, and that single gap was the source of most of my stress. That framing now sits behind every agent I build. Before I write a line, I ask what report it produces, what it is rewarded for, and what control catches it when the reward and the truth come apart.</p>
+    </div>
+
+    <div class="reflection reveal">
+      <div class="q">2. How the course changed my understanding of the problems I face, and why.</div>
+      <p>I used to file my problems as engineering problems. The bot is flaky, the threshold is wrong, the scrape broke. The course made me re-file most of them as governance problems. My bounce risk in the outreach agent is not a code problem, it is a principal-agent problem where I gave an agent the power to send mail as my brand. My off-voice scripts are not a prompt problem, they are an accountability problem where I never built the gate that makes someone answer for what reaches the audience. This matters because engineering fixes are local and governance fixes are structural. Once I started fixing the structure, the same fix closed a whole class of failures instead of one.</p>
+    </div>
+
+    <div class="reflection reveal">
+      <div class="q">3. How the course changed my perception of accounting, and why.</div>
+      <p>I came in thinking accounting was numbers and statements. I leave thinking accounting is the practice of giving and demanding accounts, and that almost everything I do is accounting in that sense. A script that reaches 550,000 people is an account I am publishing. A clip label is an account of what that footage is. A cold email under Mounya's name is an account of who is speaking. Moral Accounting reframed the whole company for me: the question is never just did it work, it is can I stand behind the account this produced. That is a much higher bar than it shipped, and it is the bar I now hold the agents to.</p>
+    </div>
+
+    <div class="reflection reveal">
+      <div class="q">4. Recommendations to future students.</div>
+      <p>Pick a subject you actually operate, not one you can only describe. The frameworks get sharp only when they hit something real, and the realer it is, the more it costs you to be vague. Concretely, before you write anything, do a control inventory of your subject: list every hard limit, every approval gate, every circuit breaker, every place a human says yes. I found mine by reading my own repositories, and that inventory became the spine of the whole project, because each control is a governance concept already living in your work. Then hunt for the gap, not just the controls. My best material came from naming the one place I had no gate. The course rewards an honest account of what is broken far more than a polished account of what works, so go find the thing you have been avoiding and write that down first.</p>
+    </div>
+
+    <div class="reflection reveal">
+      <div class="q">5. Recommendations to the instructor.</div>
+      <p>Add an agent-governance track to the bot module, because the next wave of students will not be governing one bot, they will be governing a small workforce of them, and the interesting problems are between agents, not inside one. My single most useful realization, that an internal supply chain can run agent to agent with a transfer price denominated in compute budget, only showed up because I had two workers feeding each other, and that case is about to be common. A specific suggestion: assign students to map a real or designed multi-agent pipeline as a set of responsibility centers with service levels and a compute-budget transfer price, then make them find the gate that is missing between two of the agents. That exercise forces Modules 1.2, 5.2, and 6.2 to collide in one artifact, which is exactly where my learning was densest. Second, let the bot-accountability deliberation run against a system the student already operates, since the reciprocal step, what you owe the bot, only became real for me when the bot was mine.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOUNDARIES ============ -->
+<section class="band" id="boundaries">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">Kept visible on purpose</span>
+      <h2>Boundaries and Limitations</h2>
+      <p class="lede">Governing reasoning means showing where the artifact stops and what it does not yet do.</p>
+    </div>
+    <div class="bound-grid">
+      <div class="card nots reveal">
+        <h3>What this artifact does not do</h3>
+        <ul>
+          <li>Does not publish secrets, API keys, contact addresses, or full deal economics.</li>
+          <li>Does not govern anything outside The Tech Plate.</li>
+          <li>Does not provide legal, tax, or compliance advice.</li>
+          <li>Does not serve live telemetry. The numbers are targets and design intent.</li>
+          <li>Does not modify or rebuild agent code. It governs the agents.</li>
+          <li>Does not speak for the audience. It states the owner's obligations to them.</li>
+        </ul>
+      </div>
+      <div class="card limits reveal">
+        <h3>Known limitations and uncertainties</h3>
+        <ul>
+          <li>Off-voice drift if the voice documents go stale.</li>
+          <li>No URL validation in the transcribe worker.</li>
+          <li>A static outlier threshold and a dead detection lane wasting quota.</li>
+          <li><b>No human review gate between the script agent and the published database. This is the headline known defect, named on purpose.</b></li>
+          <li>A hot outlier score measures virality, not tutorial quality.</li>
+          <li>Silent failure in the clip agent if the Drive share is revoked.</li>
+          <li>A fragile scraper and an external-verifier dependency in the outreach agent.</li>
+          <li>Caps are strong but bypassable with an explicit force flag. The escape hatch is itself a risk.</li>
+          <li>These are design-intent controls. The presence of a control is not proof of zero failures.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="footer">
+  <div class="wrap">
+    <div>
+      <div style="color:var(--text);font-family:var(--font-display);font-weight:600;margin-bottom:4px;">Governing an AI Workforce</div>
+      <div>Cornell Johnson &middot; BANA6020 Managerial Reporting &middot; Unit 7 Individual Project</div>
+    </div>
+    <div style="text-align:right;">
+      <div>By <b style="color:var(--text);">Kayvon Jafarzadeh</b></div>
+      <div>A governed artifact. View only.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="data/agents.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.6/dist/chart.umd.min.js"></script>
+<script src="charts.js" defer></script>
+<script src="app.js" defer></script>
+</body>
+</html>
